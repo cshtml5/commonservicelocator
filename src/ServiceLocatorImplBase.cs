@@ -2,7 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 
+#if OPENSILVER
+namespace Microsoft.Practices.ServiceLocation
+#else
 namespace CommonServiceLocator
+#endif
 {
     /// <summary>
     /// This class is a helper that provides a default implementation

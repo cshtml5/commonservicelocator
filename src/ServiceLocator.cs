@@ -1,6 +1,10 @@
 using System;
 
+#if OPENSILVER
+namespace Microsoft.Practices.ServiceLocation
+#else
 namespace CommonServiceLocator
+#endif
 {
     /// <summary>
     /// This class provides the ambient container for this application. If your

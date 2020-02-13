@@ -1,7 +1,11 @@
 using System;
 using System.Collections.Generic;
 
+#if OPENSILVER
+namespace Microsoft.Practices.ServiceLocation
+#else
 namespace CommonServiceLocator
+#endif
 {
     /// <summary>
     /// The generic Service Locator interface. This interface is used

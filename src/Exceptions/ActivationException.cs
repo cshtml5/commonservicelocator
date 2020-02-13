@@ -1,6 +1,10 @@
 using System;
 
+#if OPENSILVER
+namespace Microsoft.Practices.ServiceLocation
+#else
 namespace CommonServiceLocator
+#endif
 {
     /// <summary>
     /// The standard exception thrown when a ServiceLocator has an error in resolving an object.

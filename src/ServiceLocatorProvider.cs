@@ -1,4 +1,8 @@
+#if OPENSILVER
+namespace Microsoft.Practices.ServiceLocation
+#else
 namespace CommonServiceLocator
+#endif
 {
     /// <summary>
     /// This delegate type is used to provide a method that will
